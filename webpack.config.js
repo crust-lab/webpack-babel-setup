@@ -1,8 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+    mode: 'development',
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -32,6 +34,7 @@ module.exports = {
             template: './src/index.html',
             filename: './index.html'
         }),
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin(),
+        new webpack.HotModuleReplacementPlugin()
     ]
 };
