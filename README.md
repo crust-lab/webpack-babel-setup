@@ -1,6 +1,6 @@
 # Getting started with Webpack 4, Babel 7 and React 16
 
-This repository is part and parcel of the Medium blog post.
+This repository is part and parcel of the [Medium blog post](https://medium.com/crustlab/getting-started-with-webpack-4-babel-7-and-react-16-6fff27c7735e).
 
 Extract from the article:
 
